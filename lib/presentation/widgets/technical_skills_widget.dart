@@ -18,7 +18,10 @@ class TechnicalSkillsWidget extends StatelessWidget {
 
     return Container(
       width: MediaQuery.of(context).size.width,
-      padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 16.h),
+      padding: EdgeInsets.symmetric(
+        horizontal: 32.w.clamp(16, 32),
+        vertical: 16.h.clamp(8, 16),
+      ),
       // margin: EdgeInsets.only(bottom: 24),
       decoration: BoxDecoration(
         color: AppColors.bgGlass.withAlpha(20),
@@ -34,22 +37,17 @@ class TechnicalSkillsWidget extends StatelessWidget {
             },
             child: Text(
               title,
-              style: theme.textTheme.titleSmall!.copyWith(
-                color: Colors.white,
-              ),
+              style: theme.textTheme.titleSmall!.copyWith(color: Colors.white),
             ),
           ),
           SizedBox(height: 12),
           Wrap(
             spacing: 10,
             runSpacing: 12,
-            children: skills
-                .map((skill) => SkillCard(text: skill))
-                .toList(),
+            children: skills.map((skill) => SkillCard(text: skill)).toList(),
           ),
         ],
       ),
     );
   }
 }
-

@@ -95,6 +95,7 @@ class _RootPageState extends State<RootPage> {
   @override
   Widget build(BuildContext context) {
     final hPadding = getHorizontalPadding();
+    final screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
       key: scaffoldKey,
@@ -165,7 +166,9 @@ class _RootPageState extends State<RootPage> {
 
             /// HOME
             SliverPadding(
-                        padding:EdgeInsets.symmetric(horizontal: hPadding),
+              padding: EdgeInsets.symmetric(
+                horizontal: screenWidth < 700 ? 0 : hPadding,
+              ),
 
               sliver: SliverToBoxAdapter(
                 child: HomeSection(
@@ -180,6 +183,7 @@ class _RootPageState extends State<RootPage> {
               padding: EdgeInsets.symmetric(horizontal: hPadding),
               sliver: SliverToBoxAdapter(child: AboutMeSection(key: aboutKey)),
             ),
+
             /// SKILLS
             SliverToBoxAdapter(child: SkillsSection(key: skillsKey)),
 

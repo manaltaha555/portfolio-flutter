@@ -6,7 +6,7 @@ import 'package:portfolio/core/constants/app_colors.dart';
 class AppTextTheme {
   static final textTheme = TextTheme(
     headlineLarge: GoogleFonts.inter(
-      fontSize: 40.sp.clamp(36, 50),
+      fontSize: 40.sp.clamp(32, 50),
       fontWeight: FontWeight.w900,
       color: AppColors.accent,
     ),
@@ -27,11 +27,6 @@ class AppTextTheme {
       fontWeight: FontWeight.w500,
       color: AppColors.textSecondary,
     ),
-    // labelSmall: GoogleFonts.inter(
-    //   fontSize: 14.sp.clamp(12, 16),
-    //   fontWeight: FontWeight.w500,
-    //   color: AppColors.textSecondary,
-    // ),
     bodySmall: GoogleFonts.inter(
       fontSize: 12.sp.clamp(10, 14),
       fontWeight: FontWeight.w500,
@@ -50,18 +45,18 @@ class AppTextTheme {
     ),
 
     titleMedium: GoogleFonts.inter(
-      fontSize: 24.sp.clamp(22, 28),
+      fontSize: 24.sp.clamp(20, 28),
       fontWeight: FontWeight.w900,
       color: AppColors.accent,
     ),
 
     titleSmall: GoogleFonts.inter(
-      fontSize: 18.sp.clamp(14, 22),
+      fontSize: 18.sp.clamp(16, 22),
       fontWeight: FontWeight.w700,
       color: AppColors.textPrimary,
     ),
     labelSmall: GoogleFonts.inter(
-      fontSize: 16.sp.clamp(14, 18),
+      fontSize: 16.sp.clamp(13, 18),
       fontWeight: FontWeight.w700,
       color: AppColors.textPrimary,
     ),

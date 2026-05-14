@@ -28,9 +28,7 @@ class SkillsSection extends StatelessWidget {
         final isMobile = constraints.maxWidth < 800;
 
         return Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal:32,
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 32),
           child: Column(
             children: [
               HeadlineText(text: "Skills"),
@@ -67,19 +65,24 @@ class SkillsSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Technical Skills", style: textTheme.titleMedium!.copyWith(color: AppColors.textPrimary)),
+            Text(
+              "Technical Skills",
+              style: textTheme.titleMedium!.copyWith(
+                color: AppColors.textPrimary,
+              ),
+            ),
             SizedBox(height: 20),
-      
+
             TechnicalSkillsWidget(
               title: "Mobile Development",
               skills: [
                 "Flutter & Dart",
                 "Provider",
-                "Bloc & Cubit",
                 "GetX",
+                "Bloc & Cubit",
                 "RESTful APIs",
-                "Push & Local Notifications",
                 "MVVM",
+                "Push & Local Notifications",
                 "Localizations",
                 "Theming",
                 "Local Database",
@@ -87,16 +90,16 @@ class SkillsSection extends StatelessWidget {
                 "App Store & App Connect",
               ],
             ),
-      
+
             SizedBox(height: 15),
-      
+
             TechnicalSkillsWidget(
               title: "Database",
               skills: ["Firebase", "Supabase"],
             ),
-      
+
             SizedBox(height: 15),
-      
+
             TechnicalSkillsWidget(
               title: "Debug & Testing",
               skills: [
@@ -106,16 +109,16 @@ class SkillsSection extends StatelessWidget {
                 "Integration Testing",
               ],
             ),
-      
+
             SizedBox(height: 15),
-      
+
             TechnicalSkillsWidget(
               title: "Version Control",
               skills: ["Git", "Github"],
             ),
-      
+
             SizedBox(height: 15),
-      
+
             TechnicalSkillsWidget(
               title: "Architecture",
               skills: [
@@ -132,15 +135,21 @@ class SkillsSection extends StatelessWidget {
   }
 
   Widget _softSection(TextTheme textTheme, BuildContext context) {
+
     return CustomPaint(
       painter: StaticGradientBorderPainter(),
       child: Container(
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.all(32.w),
+        padding: EdgeInsets.all(32.w.clamp(16, 32)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Soft Skills", style: textTheme.titleMedium!.copyWith(color: AppColors.textPrimary)),
+            Text(
+              "Soft Skills",
+              style: textTheme.titleMedium!.copyWith(
+                color: AppColors.textPrimary,
+              ),
+            ),
             SizedBox(height: 20),
             Wrap(
               spacing: 10,
@@ -149,12 +158,17 @@ class SkillsSection extends StatelessWidget {
                   .map((skill) => SkillCard(text: skill))
                   .toList(),
             ),
-      
+
             SizedBox(height: 40),
-      
-            Text("Languages", style: textTheme.titleMedium!.copyWith(color: AppColors.textPrimary)),
+
+            Text(
+              "Languages",
+              style: textTheme.titleMedium!.copyWith(
+                color: AppColors.textPrimary,
+              ),
+            ),
             SizedBox(height: 20),
-      
+
             Wrap(
               spacing: 10,
               runSpacing: 12,

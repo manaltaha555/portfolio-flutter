@@ -14,6 +14,7 @@ class GradientText extends StatelessWidget {
       },
       child: Text(
         text,
+        textAlign: TextAlign.center,
         style:
             this.style ??
             theme.textTheme.titleSmall!.copyWith(color: Colors.white),
