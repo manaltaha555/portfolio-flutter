@@ -32,7 +32,7 @@ class AppEndDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      width: MediaQuery.of(context).size.width * 0.25,
+      width: MediaQuery.of(context).size.width * 0.3,
       backgroundColor: Colors.transparent,
       child: ClipRRect(
         child: BackdropFilter(

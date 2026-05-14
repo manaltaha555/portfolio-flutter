@@ -32,14 +32,14 @@ class _HoverBorderedButtonState extends State<HoverBorderedButton> {
           onHover: (value) => isHover.value = value,
 
           child: AnimatedContainer(
-            transform: Matrix4.translationValues(0, hover ? -3.h : 0.h, 0),
+            transform: Matrix4.translationValues(0, hover ? -3 : 0, 0),
             duration: const Duration(milliseconds: 150),
             curve: Curves.easeIn,
-            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             decoration: BoxDecoration(
               color: hover ? AppColors.accentHover : Colors.transparent,
               boxShadow: hover ? AppColors.shadowGlow : null,
-              borderRadius: BorderRadius.circular(6.r.clamp(6, 8)),
+              borderRadius: BorderRadius.circular(6),
               border: Border.all(color: AppColors.accent, width: 1.5),
             ),
             child: TweenAnimationBuilder<Color?>(

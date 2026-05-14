@@ -154,7 +154,7 @@ class ProjectCard extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 10),
-                          child: Text(project.body, style: theme.bodySmall),
+                          child: Text(project.body, style: theme.bodyMedium),
                         ),
                         Wrap(
                           spacing: 6,

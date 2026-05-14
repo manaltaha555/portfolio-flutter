@@ -23,9 +23,7 @@ class EducationLocalSource {
         "Mobile UI/UX principles and Firebase basics",
         "RESTful APIs & backend integration",
         "Project planning, testing, and soft skills development",
-        "Business English for tech workplace",
-        "Freelancing essentials with 3 real-world projects",
-        "Career coaching, CV building, and mock interviews",
+        "Freelancing essentials, Career coaching and CV building",
       ],
     ),
   ];

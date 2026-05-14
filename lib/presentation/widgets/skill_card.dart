@@ -35,7 +35,7 @@ class SkillCard extends StatelessWidget {
                 child: CustomPaint(
                   painter: GradientBorderPainter(progress: value),
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: isInProject ? 8.w: 12, vertical: isInProject ? 6.h : 10.h),
+                    padding: EdgeInsets.symmetric(horizontal: isInProject ? 8: 12, vertical: isInProject ? 6 : 10),
                     decoration: BoxDecoration(
                       color: AppColors.darkerBg.withAlpha(90),
                       borderRadius: BorderRadius.circular(12),

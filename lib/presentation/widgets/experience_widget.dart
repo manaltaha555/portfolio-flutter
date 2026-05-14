@@ -15,11 +15,14 @@ class ExperienceWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+        final isMobile = MediaQuery.of(context).size.width < 700;
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 32.0),
       child: Stack(
         children: [
           // Timeline line
+          if(!isMobile)
           Positioned(
             left: (_dotSize / 2) - (_lineWidth / 2),
             top: _dotSize,
@@ -33,6 +36,7 @@ class ExperienceWidget extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              if(!isMobile)
               ExperienceTimelineDot(
                 hoverNotifier: hoverNotifier,
               ),

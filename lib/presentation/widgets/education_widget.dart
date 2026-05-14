@@ -79,7 +79,11 @@ class EducationDesktopLayout extends StatelessWidget {
 
         Expanded(
           flex: 4,
-          child: EducationContent(education: education, theme: theme, isMobile: false,),
+          child: EducationContent(
+            education: education,
+            theme: theme,
+            isMobile: false,
+          ),
         ),
       ],
     );
@@ -105,7 +109,7 @@ class EducationMobileLayout extends StatelessWidget {
 
         const SizedBox(height: 16),
 
-        EducationContent(education: education, theme: theme, isMobile: true,),
+        EducationContent(education: education, theme: theme, isMobile: true),
       ],
     );
   }
@@ -135,7 +139,7 @@ class EducationContent extends StatelessWidget {
     super.key,
     required this.education,
     required this.theme,
-    required this.isMobile
+    required this.isMobile,
   });
 
   final EducationModel education;
@@ -146,9 +150,15 @@ class EducationContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: isMobile? CrossAxisAlignment.center : CrossAxisAlignment.start,
+      crossAxisAlignment: isMobile
+          ? CrossAxisAlignment.center
+          : CrossAxisAlignment.start,
       children: [
-        Text(education.title, style: theme.textTheme.headlineMedium),
+        Text(
+          education.title,
+          textAlign: TextAlign.center,
+          style: theme.textTheme.headlineMedium,
+        ),
 
         Padding(
           padding: const EdgeInsets.only(top: 8, bottom: 12),
