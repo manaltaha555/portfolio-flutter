@@ -35,7 +35,7 @@ class _HoverBorderedButtonState extends State<HoverBorderedButton> {
             transform: Matrix4.translationValues(0, hover ? -3 : 0, 0),
             duration: const Duration(milliseconds: 150),
             curve: Curves.easeIn,
-            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
             decoration: BoxDecoration(
               color: hover ? AppColors.accentHover : Colors.transparent,
               boxShadow: hover ? AppColors.shadowGlow : null,

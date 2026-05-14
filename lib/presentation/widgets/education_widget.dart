@@ -32,8 +32,11 @@ class EducationWidget extends StatelessWidget {
             child: CustomPaint(
               painter: GradientBorderPainter(progress: isHover ? 1 : 0),
               child: Container(
-                color: AppColors.bgGlass,
                 padding: const EdgeInsets.all(32),
+                decoration: BoxDecoration(
+                  color: AppColors.bgGlass,
+                  borderRadius: BorderRadius.all(const Radius.circular(12)),
+                ),
                 child: LayoutBuilder(
                   builder: (context, constraints) {
                     final isMobile = constraints.maxWidth < 600;

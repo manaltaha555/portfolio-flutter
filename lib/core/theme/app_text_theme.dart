@@ -56,7 +56,7 @@ class AppTextTheme {
       color: AppColors.textPrimary,
     ),
     labelSmall: GoogleFonts.inter(
-      fontSize: 16.sp.clamp(13, 18),
+      fontSize: 16.sp.clamp(16, 18),
       fontWeight: FontWeight.w700,
       color: AppColors.textPrimary,
     ),

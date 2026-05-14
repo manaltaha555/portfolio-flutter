@@ -18,12 +18,12 @@ class SocialWidget extends StatelessWidget {
         await openLink(socialLink);
       },
       child: Container(
-        padding: EdgeInsets.all(12.w),
-        margin: EdgeInsets.only(left: 16.w),
+        padding: EdgeInsets.all(12),
+        margin: EdgeInsets.only(left: 16),
         decoration: BoxDecoration(
           color: AppColors.bgGlass,
           border: Border.all(color: AppColors.border),
-          borderRadius: BorderRadius.all(Radius.circular(12.r)),
+          borderRadius: BorderRadius.all(Radius.circular(12)),
         ),
         child: SvgPicture.asset(imgPath, color: AppColors.textPrimary,),
       ),
