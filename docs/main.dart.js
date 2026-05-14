@@ -89662,7 +89662,7 @@ $S:543}
 A.JS.prototype={
 L(a){return A.d_(A.b([new A.lB("About me",null),A.NM(new A.a1M(A.ah(a).ok))],t.p),B.H,null,B.z,B.B)}}
 A.a1M.prototype={
-$2(a,b){var s,r,q,p=null,o="images/portfolio.jpg",n="Flutter Developer & Problem Solver\n\n"
+$2(a,b){var s,r,q,p=null,o="assets/images/portfolio.jpg",n="Flutter Developer & Problem Solver\n\n"
 if(b.b<800){s=32*$.b2().gcf()
 r=24*$.b2().gcn()
 r=A.cw(B.mA,p,B.r,p,p,new A.c8(B.y,A.LK(B.fO,new A.jU(o,p,p)),p,A.ht(new A.ax(12,12)),p,p,B.a7),p,250,new A.a5(s,r,s,r),p,p,p,250)
@@ -99631,7 +99631,7 @@ B.as=new A.hR(0,0,null,null)
 B.lG=new A.hR(10,null,null,null)
 B.A4=new A.hR(null,16,null,null)
 B.U3=new A.hR(null,20,null,null)
-B.U4=new A.hR(null,35,null,null)
+B.U4=new A.hR(null,40,null,null)
 B.U6=new A.DE(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.lH=new A.Rc(0,0,0,0,0,0,0,!1,!1,null,0)
 B.iy=new A.ako(0,"firstIsTop")

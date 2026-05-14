@@ -28,7 +28,7 @@ class AboutMeSection extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                       image: DecorationImage(
-                        image: AssetImage("images/portfolio.jpg"),
+                        image: AssetImage("assets/images/portfolio.jpg"),
                         fit: BoxFit.cover,
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(12)),
@@ -75,7 +75,7 @@ class AboutMeSection extends StatelessWidget {
                       margin: EdgeInsets.symmetric(horizontal: 32.w),
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage("images/portfolio.jpg"),
+                          image: AssetImage("assets/images/portfolio.jpg"),
                           fit: BoxFit.cover,
                           // alignment: Alignment.bottomCenter,
                         ),
