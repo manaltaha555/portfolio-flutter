@@ -136,13 +136,13 @@ class ProjectCard extends StatelessWidget {
                 Flexible(
                   flex: 3,
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 32.w.clamp(30,32)),
+                    padding: EdgeInsets.symmetric(horizontal: 32.w.clamp(28,32)),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       // mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 16, bottom: 10),
+                          padding: EdgeInsets.only(top: 16.h.clamp(14, 18), bottom: 10.h.clamp(8, 12)),
                           child: Text(
                             project.projectTitle,
                             style: theme.labelSmall,
@@ -153,12 +153,12 @@ class ProjectCard extends StatelessWidget {
                           style: theme.bodySmall,
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 10),
+                          padding: EdgeInsets.symmetric(vertical: 10.h.clamp(8, 12)),
                           child: Text(project.body, style: theme.bodyMedium),
                         ),
                         Wrap(
-                          spacing: 6,
-                          runSpacing: 7,
+                          spacing: 6.w.clamp(4, 6),
+                          runSpacing: 7.h.clamp(6, 7),
                           children: List.from(project.skills)
                               .map(
                                 (skill) =>

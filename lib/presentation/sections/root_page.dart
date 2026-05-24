@@ -210,7 +210,7 @@ class _RootPageState extends State<RootPage> {
                           maxCrossAxisExtent: 550,
                           mainAxisSpacing: 24,
                           crossAxisSpacing: 24,
-                          mainAxisExtent: 420,
+                          mainAxisExtent: 430,
                         ),
                         itemBuilder: (context, index) {
                           return ProjectCard(

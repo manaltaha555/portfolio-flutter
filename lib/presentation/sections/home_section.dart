@@ -102,7 +102,7 @@ class HomeSection extends StatelessWidget {
                     HoverBorderedButton(
                       onPressed: () async {
                         await openLink(
-                          'https://drive.google.com/file/d/179VBM2ZiZENqav5dnl3ccAjhSqNP2IJ3/view?usp=sharing',
+                          'https://drive.google.com/file/d/1mXM8a-xMLLe5CzLLLPaXq-DKn8P78pTH/view?usp=sharing',
                         );
                       },
                       text: "Download My CV",

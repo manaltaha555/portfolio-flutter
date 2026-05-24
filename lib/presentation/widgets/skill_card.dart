@@ -44,7 +44,7 @@ class SkillCard extends StatelessWidget {
                       text,
                       style: theme.textTheme.bodyLarge!.copyWith(
                         color: AppColors.textPrimary,
-                        fontSize: isInProject ? 9.sp.clamp(9, 12) : 14.sp.clamp(12, 16),
+                        fontSize: isInProject ? 9.sp.clamp(8, 12) : 14.sp.clamp(12, 16),
                       ),
                     ),
                   ),
