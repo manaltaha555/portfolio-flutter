@@ -49,7 +49,7 @@ class ProjectsLocalSource {
       startDate: DateTime(2024, 6, 1),
       endDate: DateTime(2025, 11, 1),
       body:
-          "App for exploring restaurants, cafes, and malls in Alexandria with search, filters, maps integration, and multilingual support.",
+          "App for exploring restaurants, cafes, and malls in Alexandria with search, filters, maps integration and multilingual support.",
       skills: [
         "Flutter",
         "Bloc",

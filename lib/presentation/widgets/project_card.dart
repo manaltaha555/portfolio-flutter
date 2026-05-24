@@ -136,7 +136,7 @@ class ProjectCard extends StatelessWidget {
                 Flexible(
                   flex: 3,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 32),
+                    padding: EdgeInsets.symmetric(horizontal: 32.w.clamp(30,32)),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       // mainAxisAlignment: MainAxisAlignment.center,
