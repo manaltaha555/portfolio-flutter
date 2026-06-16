@@ -4,40 +4,26 @@ class ProjectsLocalSource {
   static final List<ProjectModel> projects = [
     ProjectModel(
       imagePath: [
-        "assets/images/listenary_splash.jpeg",
-        "assets/images/listenary_home.jpeg",
-        "assets/images/listenary_reading.jpeg",
-        "assets/images/listenary_search.jpeg",
-        "assets/images/listenary_profile.jpeg",
+        "assets/images/sync_chat.png",
+        "assets/images/sync_dark.png",
+        "assets/images/sync_light.png",
+        "assets/images/sync_pick.png",
       ],
-      projectTitle: "Listenary",
-      startDate: DateTime(2024, 1, 1),
-      endDate: DateTime(2025, 6, 1),
+      projectTitle: "Sync Communication App",
+      startDate: DateTime(2026, 5, 20),
+      endDate: DateTime(2026, 6, 15),
       body:
-          "OCR system that converts scanned files into digital text with translation, summarization, Text-to-Speech, and a free book library.",
+          "A real-time communication app for instant messaging and voice/video calls. It enables users to connect, manage conversations, and interact seamlessly in one platform.",
       skills: [
         "Flutter",
-        "Flask API",
-        "Firebase",
-        "MongoDB",
-        "GetX",
-        "OCR",
-        "TTS",
+        "Bloc",
+        "Firestore",
+        "RTD",
+        "Hive",
+        "Theming",
+        "ZegoCloud",
       ],
-      githubLink: "https://github.com/manaltaha555/Listenary",
-    ),
-    ProjectModel(
-      imagePath: [
-        "assets/images/tasky_dark.jpeg",
-        "assets/images/tasky_light.jpeg",
-      ],
-      projectTitle: "Tasky",
-      startDate: DateTime(2025, 6, 1),
-      endDate: DateTime(2025, 7, 1),
-      body:
-          "Task management app to create and organize daily tasks with a clean UI and support for light and dark themes.",
-      skills: ["Flutter", "Bloc", "Hive", "Theming"],
-      githubLink: "https://github.com/manaltaha555/Tasky",
+      githubLink: "https://github.com/manaltaha555/sync-communication-app",
     ),
     ProjectModel(
       imagePath: [
@@ -60,6 +46,43 @@ class ProjectsLocalSource {
         "Google Maps API",
       ],
       githubLink: "https://github.com/nhahub/NHA-230",
+    ),
+    ProjectModel(
+      imagePath: [
+        "assets/images/tasky_dark.jpeg",
+        "assets/images/tasky_light.jpeg",
+      ],
+      projectTitle: "Tasky",
+      startDate: DateTime(2025, 6, 1),
+      endDate: DateTime(2025, 7, 1),
+      body:
+          "Task management app to create and organize daily tasks with a clean UI and support for light and dark themes.",
+      skills: ["Flutter", "Bloc", "Hive", "Theming"],
+      githubLink: "https://github.com/manaltaha555/Tasky",
+    ),
+    ProjectModel(
+      imagePath: [
+        "assets/images/listenary_splash.jpeg",
+        "assets/images/listenary_home.jpeg",
+        "assets/images/listenary_reading.jpeg",
+        "assets/images/listenary_search.jpeg",
+        "assets/images/listenary_profile.jpeg",
+      ],
+      projectTitle: "Listenary",
+      startDate: DateTime(2024, 1, 1),
+      endDate: DateTime(2025, 6, 1),
+      body:
+          "OCR system that converts scanned files into digital text with translation, summarization, Text-to-Speech, and a free book library.",
+      skills: [
+        "Flutter",
+        "Flask API",
+        "Firebase",
+        "MongoDB",
+        "GetX",
+        "OCR",
+        "TTS",
+      ],
+      githubLink: "https://github.com/manaltaha555/Listenary",
     ),
   ];
 }
