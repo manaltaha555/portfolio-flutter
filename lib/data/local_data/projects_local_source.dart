@@ -24,6 +24,19 @@ class ProjectsLocalSource {
         "ZegoCloud",
       ],
       githubLink: "https://github.com/manaltaha555/sync-communication-app",
+      demoLink: "https://drive.google.com/file/d/1I1w2XDVTaflil3ZDP19e4siUcaeSNGYj/view?usp=sharing"
+    ),
+    ProjectModel(
+      imagePath: [
+        "assets/images/alban_masr_consumer.png",
+        "assets/images/alban_masr_producer.png",
+      ],
+      projectTitle: "Manaset Alban Masr",
+      startDate: DateTime(2026, 2, 1),
+      endDate: DateTime(2026, 5, 1),
+      body:
+          "A multi-role dairy marketplace connecting producers and retailers, enabling product management, seamless order placement, order tracking, push notifications, and an intuitive user experience.",
+      skills: ["Flutter", "Bloc", "Hive", "Restful API", "Push Notifications", "Clean Architecture", "Responsive UI"],
     ),
     ProjectModel(
       imagePath: [

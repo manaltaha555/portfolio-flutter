@@ -66,14 +66,14 @@ class HomeSection extends StatelessWidget {
                   // mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(right: 8.0.w),
+                      padding: EdgeInsets.only(right: 8.0.w.clamp(6, 10)),
                       child: Text(
                         "📍 Egypt, Alexandria",
                         style: theme.textTheme.bodyMedium,
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(right: 8.0.w),
+                      padding: EdgeInsets.only(right: 8.0.w.clamp(6, 10)),
                       child: Text(
                         "✉️ mnalth544@gmail.com",
                         style: theme.textTheme.bodyMedium,
@@ -93,7 +93,7 @@ class HomeSection extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(right: 20.0.r),
+                      padding: EdgeInsets.only(right: 20.0),
                       child: HoverButton(
                         onPressed: onGetInTouchPressed,
                         text: "Get in Touch",

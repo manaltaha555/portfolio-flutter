@@ -6,6 +6,8 @@ class ProjectModel {
   final String body;
   final List<String> skills;
   final String? githubLink;
+  final String? demoLink;
+
   
   ProjectModel({
     required this.endDate,
@@ -15,5 +17,6 @@ class ProjectModel {
     required this.body,
     required this.skills,
     this.githubLink,
+    this.demoLink
   });
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:portfolio/core/constants/app_colors.dart';
 import 'package:portfolio/core/theme/app_text_theme.dart';
 
@@ -11,7 +10,7 @@ class AppTheme {
       filled: true,
       fillColor: AppColors.darkerBg,
       enabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.all(Radius.circular(12.r)),
+        borderRadius: BorderRadius.all(Radius.circular(12)),
         borderSide: BorderSide(color: AppColors.border),
       ),
       focusedBorder: OutlineInputBorder(
@@ -19,7 +18,7 @@ class AppTheme {
         borderSide: BorderSide(color: AppColors.border, width: 1.5),
       ),
       errorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.all(Radius.circular(12.r)),
+        borderRadius: BorderRadius.all(Radius.circular(12)),
         borderSide: BorderSide(color: Colors.red),
       ),
     ),

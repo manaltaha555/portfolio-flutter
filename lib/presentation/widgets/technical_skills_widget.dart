@@ -30,6 +30,7 @@ class TechnicalSkillsWidget extends StatelessWidget {
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+    
         children: [
           ShaderMask(
             shaderCallback: (bounds) {

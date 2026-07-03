@@ -14,6 +14,7 @@ class ExperienceLocalSource {
         "Collaborated using Git in a team environment",
         "Optimized performance and debugged complex issues",
         "Contributed to full development lifecycle from build to deployment",
+        "Works in company projects like: Estimator, Walk Now and Manaset Alban Masr",
         "published apps on Google Play Store",
       ],
     ),

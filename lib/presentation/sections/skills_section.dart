@@ -1,183 +1,134 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/core.dart';
 import 'package:portfolio/presentation/widgets/headline_text.dart';
-import 'package:portfolio/presentation/widgets/skill_card.dart';
-import 'package:portfolio/presentation/widgets/static_gradient_border.dart';
 import 'package:portfolio/presentation/widgets/technical_skills_widget.dart';
 
 class SkillsSection extends StatelessWidget {
   SkillsSection({super.key});
 
-  final List<String> softSkills = [
-    "Time Management",
-    "Teamwork",
-    "Problem Solving",
-    "Critical Thinking",
-    "Communication",
-    "Attention To Detail",
-  ];
-
-  final List<String> languages = ["Arabic (Native)", "English (Very good)"];
-
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
+    final width = MediaQuery.of(context).size.width;
+    final isMobile = width < 800;
+    final double horizontalPadding = isMobile ? 18.w.clamp(16, 18) : width * 0.25;
 
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final isMobile = constraints.maxWidth < 800;
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 32),
+      child: Column(
+        children: [
+          HeadlineText(text: "Skills"),
+          SizedBox(height: 24),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                TechnicalSkillsWidget(
+                  title: "Languages & Frameworks",
+                  skills: ["Dart", "Flutter", "Python", "Java Script", "Java"],
+                ),
 
-        return Padding(
-          padding: EdgeInsets.symmetric(horizontal: 32),
-          child: Column(
-            children: [
-              HeadlineText(text: "Skills"),
-              SizedBox(height: 24),
+                SizedBox(height: 15),
 
-              isMobile
-                  ? Column(
-                      children: [
-                        _technicalSection(textTheme),
-                        SizedBox(height: 24),
-                        _softSection(textTheme, context),
-                      ],
-                    )
-                  : Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(child: _technicalSection(textTheme)),
-                        SizedBox(width: 32.w),
-                        Expanded(child: _softSection(textTheme, context)),
-                      ],
-                    ),
-            ],
+                TechnicalSkillsWidget(
+                  title: "State Management",
+                  skills: ["BLoC", "Cubit", "Provider", "GetX", "Riverpod"],
+                ),
+
+                SizedBox(height: 15),
+
+                TechnicalSkillsWidget(
+                  title: "Architecture & Principles",
+                  skills: [
+                    "MVVM",
+                    "SOLID Principles",
+                    "Clean Architecture",
+                    "Separation Of Concerns",
+                  ],
+                ),
+
+                SizedBox(height: 15),
+
+                TechnicalSkillsWidget(
+                  title: "Backend & Services",
+                  skills: [
+                    "Supabase",
+                    "Firebase",
+                    "RESTful APIs with Dio and https",
+                    "Push Notifications",
+                    "NestJs",
+                    "NodeJs",
+                    "Flask",
+                    "MongoDB",
+                  ],
+                ),
+
+                SizedBox(height: 15),
+
+                TechnicalSkillsWidget(
+                  title: "Storage & Databases & Caching",
+                  skills: [
+                    "Hive",
+                    "Sqflite",
+                    "SharedPreferences Local Storage",
+                    "Secure Storage",
+                  ],
+                ),
+
+                SizedBox(height: 15),
+
+                TechnicalSkillsWidget(
+                  title: "UI & UX",
+                  skills: [
+                    "Responsive Design",
+                    "Animations",
+                    "Theming",
+                    "Localization",
+                  ],
+                ),
+
+                SizedBox(height: 15),
+
+                TechnicalSkillsWidget(
+                  title: "Testing & Debugging",
+                  skills: [
+                    "Unit Testing",
+                    "Widget Testing",
+                    "Integration Testing",
+                    "Flutter DevTools",
+                  ],
+                ),
+
+                SizedBox(height: 15),
+
+                TechnicalSkillsWidget(
+                  title: "Version Control & Collaboration",
+                  skills: ["Git", "GitHub"],
+                ),
+
+                SizedBox(height: 15),
+
+                TechnicalSkillsWidget(
+                  title: "AI Tools & Automation",
+                  skills: [
+                    "AI-assisted Coding",
+                    "Debugging",
+                    "Code Optimization",
+                    "UI Prototyping",
+                    "Prompt Engineering",
+                  ],
+                ),
+
+                SizedBox(height: 15),
+
+                TechnicalSkillsWidget(
+                  title: "Project Management",
+                  skills: ["Trello", "Agile Development"],
+                ),
+              ],
+            ),
           ),
-        );
-      },
-    );
-  }
-
-  Widget _technicalSection(TextTheme textTheme) {
-    return CustomPaint(
-      painter: StaticGradientBorderPainter(),
-      child: Container(
-        padding: EdgeInsets.all(32.w),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Technical Skills",
-              style: textTheme.titleMedium!.copyWith(
-                color: AppColors.textPrimary,
-              ),
-            ),
-            SizedBox(height: 20),
-
-            TechnicalSkillsWidget(
-              title: "Mobile Development",
-              skills: [
-                "Flutter & Dart",
-                "Provider",
-                "GetX",
-                "Bloc & Cubit",
-                "RESTful APIs",
-                "MVVM",
-                "Push & Local Notifications",
-                "Localizations",
-                "Theming",
-                "Local Database",
-                "Google Play Console",
-                "App Store & App Connect",
-              ],
-            ),
-
-            SizedBox(height: 15),
-
-            TechnicalSkillsWidget(
-              title: "Database",
-              skills: ["Firebase", "Supabase"],
-            ),
-
-            SizedBox(height: 15),
-
-            TechnicalSkillsWidget(
-              title: "Debug & Testing",
-              skills: [
-                "Unit Testing",
-                "Widget Testing",
-                "Mockito",
-                "Integration Testing",
-              ],
-            ),
-
-            SizedBox(height: 15),
-
-            TechnicalSkillsWidget(
-              title: "Version Control",
-              skills: ["Git", "Github"],
-            ),
-
-            SizedBox(height: 15),
-
-            TechnicalSkillsWidget(
-              title: "Architecture",
-              skills: [
-                "OOP",
-                "SOLID Principles",
-                "Algorithm",
-                "Data Structure",
-              ],
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _softSection(TextTheme textTheme, BuildContext context) {
-
-    return CustomPaint(
-      painter: StaticGradientBorderPainter(),
-      child: Container(
-        width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.all(32.w.clamp(16, 32)),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Soft Skills",
-              style: textTheme.titleMedium!.copyWith(
-                color: AppColors.textPrimary,
-              ),
-            ),
-            SizedBox(height: 20),
-            Wrap(
-              spacing: 10,
-              runSpacing: 12,
-              children: softSkills
-                  .map((skill) => SkillCard(text: skill))
-                  .toList(),
-            ),
-
-            SizedBox(height: 40),
-
-            Text(
-              "Languages",
-              style: textTheme.titleMedium!.copyWith(
-                color: AppColors.textPrimary,
-              ),
-            ),
-            SizedBox(height: 20),
-
-            Wrap(
-              spacing: 10,
-              runSpacing: 12,
-              children: languages
-                  .map((skill) => SkillCard(text: skill))
-                  .toList(),
-            ),
-          ],
-        ),
+        ],
       ),
     );
   }

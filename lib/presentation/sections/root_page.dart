@@ -207,10 +207,10 @@ class _RootPageState extends State<RootPage> {
                         physics: const NeverScrollableScrollPhysics(),
                         itemCount: ProjectsLocalSource.projects.length,
                         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                          maxCrossAxisExtent: 550,
+                          maxCrossAxisExtent: 570,
                           mainAxisSpacing: 24,
                           crossAxisSpacing: 24,
-                          mainAxisExtent: 430,
+                          mainAxisExtent: 450,
                         ),
                         itemBuilder: (context, index) {
                           return ProjectCard(

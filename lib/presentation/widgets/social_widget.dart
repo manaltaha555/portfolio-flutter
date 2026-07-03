@@ -19,7 +19,7 @@ class SocialWidget extends StatelessWidget {
       },
       child: Container(
         padding: EdgeInsets.all(12),
-        margin: EdgeInsets.only(left: 16),
+        margin: EdgeInsets.only(right: 16),
         decoration: BoxDecoration(
           color: AppColors.bgGlass,
           border: Border.all(color: AppColors.border),
